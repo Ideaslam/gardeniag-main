@@ -179,7 +179,7 @@
                   <i class="icon-microscope"></i>
                 </div><!-- /.service__icon -->
                 <div class="service__content">
-                  <h4 class="service__title"  data-lang="services_layout1_title3">جراحة التجميل والترميم</h4>
+                  <h4 class="service__title"  data-lang="services_title_cosmetic">جراحة التجميل والترميم</h4>
                   <p class="service__desc" data-lang="services_layout1_desc3">
                     يقدم الجراحون ذو الخبرة والكفاءة العالية لدى مجمع غاردينيا الطبي عمليات الجراحة التجميلية  على أعلى مستوى وبنسبة نجاح كبير باستخدام أحدث التقنيات لتجميل الجسم وشفط الدهون مثل Vaser و J Plasmaو BodyTite.
                     </p>
@@ -189,7 +189,7 @@
                     <li data-lang="services_layout1_list3_3">شد الثدي</li>
                   </ul>
                   <br><br>
-                  <a href="services-single3.html" class="btn btn__secondary btn__outlined btn__rounded">
+                  <a href="services-cosmetic.html" class="btn btn__secondary btn__outlined btn__rounded">
                     <span data-lang="services_layout1_btn">المزيد</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -202,7 +202,7 @@
                   <i class="icon-dropper"></i>
                 </div><!-- /.service__icon -->
                 <div class="service__content">
-                  <h4 class="service__title" data-lang="services_layout1_title5">  جراحات اليد</h4>
+                  <h4 class="service__title" data-lang="services_title_surgery">  جراحات اليد</h4>
                   <p class="service__desc" data-lang="services_layout1_desc5">هناك العديد من أنواع العمليات الجراحية المختلفة التي يمكن إجراؤها لليد، اعتمادًا على السبب الأساسي للمشكلة.</p>
                   <ul class="list-items list-items-layout1 list-unstyled pb-5">
                     <li data-lang="services_layout1_list5_1">متلازمة النفق الرسغي</li>
@@ -231,7 +231,7 @@
                     <li data-lang="services_layout1_list4_3">أنواع الغرف: لكبار الشخصيات، غرف فاخرة وغرف عادية</li>
                   </ul>
                   <br><br>
-                  <a href="services-single5.html" class="btn btn__secondary btn__outlined btn__rounded">
+                  <a href="services-day_surgery.html" class="btn btn__secondary btn__outlined btn__rounded">
                     <span data-lang="services_layout1_btn">المزيد </span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -244,7 +244,7 @@
                   <i class="icon-heart2"></i>
                 </div><!-- /.service__icon -->
                 <div class="service__content">
-                  <h4 class="service__title" data-lang="services_layout1_title6">          التخدير                   </h4>
+                  <h4 class="service__title" data-lang="services_title_anesthesia">          التخدير                   </h4>
                   <p class="service__desc" data-lang="services_layout1_desc6">يتم تقديم رعاية تخدير شاملة وآمنة من قبل فريق من أخصائيي التخدير المهرة، لضمان راحة وسلامة المرضى خلال الإجراءات الجراحية والتشخيصية.</p>
                   <ul class="list-items list-items-layout1 list-unstyled pb-5">
                     <li data-lang="services_layout1_list6_1"> رعاية تخدير شاملة لجميع الإجراءات الجراحية.</li>
@@ -252,7 +252,7 @@
                     <li data-lang="services_layout1_list6_3">ضمان راحة وسلامة المرضى أثناء الإجراءات.</li>
                   </ul>
                   <br>
-                  <a href="services-single6.html" class="btn btn__secondary btn__outlined btn__rounded">
+                  <a href="services-anesthesia.html" class="btn btn__secondary btn__outlined btn__rounded">
                     <span data-lang="services_layout1_btn">المزيد</span>
                     <i class="icon-arrow-right"></i>
                   </a>
