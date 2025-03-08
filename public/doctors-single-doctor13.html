@@ -2,18 +2,8 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Medcity - Medical Healthcare HTML5 Template</title>
-
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-  <link rel="stylesheet" href="assets/css/libraries.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/components.js"></script>
 </head>
 
 <body>
@@ -25,122 +15,9 @@
     <!-- =========================
         Header
     =========================== -->
-    <header class="header header-layout1">
-      <div class="header-topbar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-12">
-              <div class="d-flex align-items-center justify-content-between">
-                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
-                  <li>
-                    <button class="miniPopup-emergency-trigger" type="button">24/7    الطوارئ </button>
-                    <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
-                      <div class="emergency__icon">
-                        <i class="icon-call3"></i>
-                      </div>
-                      <a href="tel:+97466505015" class="phone__number">
-                        <i class="icon-phone mx-3"></i> <span>97466505015+</span>
-                      </a>
-                      <a href="tel:+97444246666" class="phone__number">
-                        <i class="icon-phone mx-3"></i> <span>97444246666+</span>
-                      </a>
-                      <p>نحن دائمًا هنا من أجلك فريق الاستقبال على أتم للرد على جميع استفساراتك</p>
-                      <a href="contact-us.html" class="btn btn__secondary btn__link btn__block">
-                        <span data-lang="Book_item"> احجز موعدك</span> <i class="icon-arrow-right"></i>
-                      </a>
-                    </div><!-- /.miniPopup-emergency -->
-                  </li>
-                  <li>
-                    <i class="icon-phone mx-3"></i><a href="tel:+97444246666">الطوارئ: 97444246666+</a>
-                  </li>
-                  <li>
-                    <i class="icon-location mx-3"></i><a href="#"> موقعنا: الطائف-الدوحة-قطر</a>
-                  </li>
-                  <li>
-                    <i class="icon-clock mx-3"></i><a href="contact-us.html">9am -11pm / Friday 12pm-8pm</a>
-                  </li>
-                </ul><!-- /.contact__list -->
-                <div class="d-flex">
-                  <ul class="social-icons list-unstyled mb-0 mr-30">
-                    <li><a href="https://www.facebook.com/GardeniaMedicalCentre/"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="mx-3"><a href="https://www.instagram.com/gardeniamedical/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.tiktok.com/@gardeniamedical"><i class="fab fa-tiktok"></i></a></li>
-                  </ul><!-- /.social-icons -->
-                  
-                </div>
-              </div>
-            </div><!-- /.col-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.header-top -->
-      <nav class="navbar navbar-expand-lg sticky-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" height="80px" width="130px" class="logo-dark" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button">
-            <span class="menu-lines"><span></span></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav  mx-2">
-              <li class="nav__item has-dropdown">
-                <a href="index.html" class="nav__item-link" data-lang="Home_item">الرئيسية</a>
-              </li><!-- /.nav-item -->
-
-              <li class="nav__item">
-                <a href="about-us.html" class="nav__item-link" data-lang="about_item">من نحن</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="services.html" class="nav__item-link" data-lang="services_item">الخدمات </a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="doctors-standard.html" class="nav__item-link active" data-lang="doctor_item">الأطباء </a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="blog.html" class="nav__item-link" data-lang="blog_item">مقالات </a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link px-5" data-lang="contact_item">اتصل بنا</a>
-              </li><!-- /.nav-item -->
-            </ul><!-- /.navbar-nav -->
-            <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
-          </div><!-- /.navbar-collapse -->
-
-
-          <div class="d-none d-xl-flex align-items-center position-relative mx-2">
-            <div class="miniPopup-departments-trigger">
-              <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
-              <a href="services.html" data-lang="department_item">الأقسام</a>
-            </div>
-            <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link" data-lang="footer_department_item1">طب الأسرة</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single2.html" class="nav__item-link" data-lang="footer_department_item2"> العظام</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single3.html" class="nav__item-link" data-lang="footer_department_item3"> التجميل</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single1.html" class="nav__item-link" data-lang="footer_department_item4"> جراحة اليد</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single10.html" class="nav__item-link" data-lang="footer_department_item5"> الطب الباطني</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single11.html" class="nav__item-link" data-lang="footer_department_item6">الجلدية والليزر </a>
-              </li><!-- /.nav-item -->
-            </ul> <!-- /.miniPopup-departments -->
-            <a href="contact-us.html" class="btn btn__primary btn__rounded mx-3">
-              <i class="icon-calendar"></i>
-              <span data-lang="Book_item">احجز موعدك</span>
-            </a>
-          </div>
-        </div><!-- /.container -->
-      </nav><!-- /.navabr -->
-    </header><!-- /.Header -->
+ <header class="header header-layout1" >
+     
+    </header>
 
     <!-- ========================
        page title 
@@ -320,97 +197,7 @@
       Footer
     ========================== -->
     <footer class="footer">
-      <div class="footer-primary">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-3">
-              <div class="footer-widget-about">
-                <img src="assets/images/logo/logo-light.png" height="100px" width="185px" alt="logo" class="mb-30">
-                <p class="color-gray" data-lang="footer_title">
-                  نحن هنا لتقديم رعاية صحية عالية الجودة بكل احترام ولطف، ونأمل أن نكون الخيار الأول والأمثل في تلبية احتياجاتكم الصحية وصحة عائلتكم.                  
-                </p>
-                <a href="contact-us.html" class="btn btn__primary btn__primary-style2 btn__link">
-                  <span data-lang="about_blog_btn">احجز موعدك الآن</span> <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-xl-2 -->
-            <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-1">
-              <div class="footer-widget-nav">
-                <h6 class="footer-widget__title text-center" data-lang="department_item">الأقسام</h6>
-                <nav class="d-flex justify-content-between">
-
-                  <ul class="list-unstyled">
-                    <li><a href="services-single.html" data-lang="footer_department_item1"> طب الأسرة</a></li>
-                    <li><a href="services-single2.html" data-lang="footer_department_item2"> العظام</a></li>
-                    <li><a href="services-single3.html" data-lang="footer_department_item3"> التجميل</a></li>
-                    <li><a href="services-single1.html" data-lang="footer_department_item4"> جراحة اليد</a></li>
-                    <li><a href="services-single10.html" data-lang="footer_department_item5"> الطب الباطني</a></li>
-                    <li><a href="services-single11.html" data-lang="footer_department_item6"> الجلدية والليزر </a></li>
-                  </ul>
-                  <ul class="list-unstyled px-2">
-                    <li><a href="services-single13.html" data-lang="footer_department_item7">النساء والتوليد</a></li>
-                    <li><a href="services-single16.html" data-lang="footer_department_item8">المختبر</a></li>
-                    <li><a href="services-single17.html" data-lang="footer_department_item9">الأنف والأذن والحنجرة </a></li>
-                    <li><a href="services-single18.html" data-lang="footer_department_item10"> التغذية</a></li>
-                    <li><a href="services-single19.html" data-lang="footer_department_item1_1">العلاج الطبيعي</a></li>
-                  </ul>
-
-                </nav>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-12 col-md-6 col-lg-2">
-              <div class="footer-widget-nav">
-                <h6 class="footer-widget__title" data-lang="footer_Electronic">روابط إلكترونية</h6>
-                <nav>
-                  <ul class="list-unstyled">
-                    <li><a href="about-us.html" data-lang="footer_Electronic_list1">من نحن</a></li>
-                    <li><a href="doctors-standard.html" data-lang="footer_Electronic_list2">العيادات</a></li>
-                    <li><a href="doctors-standard.html" data-lang="footer_Electronic_list3">الأطباء</a></li>
-                    <li><a href="blog.html" data-lang="footer_Electronic_list4">الأخبار والصور</a></li>
-                    <li><a href="contact-us.html" data-lang="footer_Electronic_list5">الحجز</a></li>
-
-                    <!--<li>
-                      <select name="" id="language">
-                        <option value="ar" data-lang="arabic" selected>arabic</option>
-                        <option value="en" data-lang="english">english</option>
-                      </select>
-                    </li>-->
-
-                    <button id="play" class="text-white">
-                      <option value="ar" data-lang="arabic" selected>arabic</option>
-                      <option value="en" data-lang="english">english</option>
-                    </button>
-                  </ul>
-                  
-                    
-                  
-                </nav>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="footer-widget-contact">
-                <h6 class="footer-widget__title color-heading" data-lang="footer_contact">اتصل بنا مباشرة</h6>
-                <ul class="contact-list list-unstyled">
-                  <li data-lang="footer_contact_title">فريقنا جاهز للإجابة على أي استفسار أو مساعدة تحتاجها، تواصل معنا بكل سهولة<li>
-                    <a href="tel:+97444246666" class="phone__number">
-                      <i class="icon-phone"></i> <span class="mx-3" data-lang="phone">97444246666+</span>
-                    </a>
-                  </li>
-                  <li class="color-body" data-lang="footer_contact_title2">6 دحل الحمام ، شارع الطائف ، الدوحة ، قطر</li>
-                </ul>
-                <div class="d-flex align-items-center">
-                  <ul class="social-icons list-unstyled mb-0">
-                    <li><a href="https://www.facebook.com/GardeniaMedicalCentre/"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="mx-3"><a href="https://www.instagram.com/gardeniamedical/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.tiktok.com/@gardeniamedical"><i class="fab fa-tiktok"></i></a></li>
-                  </ul><!-- /.social-icons -->
-                </div>
-              </div><!-- /.footer-widget__content -->
-            </div><!-- /.col-lg-2 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.footer-primary -->
-
+  
     </footer><!-- /.Footer -->
     <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
   </div><!-- /.wrapper -->

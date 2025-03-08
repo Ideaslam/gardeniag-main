@@ -48,7 +48,7 @@ const translation = {
 
         
         footer_title: "We are here to provide high-quality healthcare with respect and kindness, and we hope to be your first and best choice in meeting your health needs and those of your family.",
-        footer_department_item1: "Family Medicine",
+        title_family_medicine: "Family Medicine",
         footer_department_item2:"Orthopedics",
         footer_department_item3:"Cosmetic Surgery",
         footer_department_item4:"Hand Surgery",
@@ -57,8 +57,8 @@ const translation = {
         footer_department_item7: "Obstetrics & Gynecology",
         footer_department_item8: "Laboratory",
         footer_department_item9: "Ear, Nose & Throat (ENT)",
-        footer_department_item10: "Nutrition",
-        footer_department_item1_1: "Physiotherapy",
+        title_family_medicine0: "Nutrition",
+        title_family_medicine_1: "Physiotherapy",
         footer_Electronic: "Electronic Links",
         footer_Electronic_list1: "About Us",
         footer_Electronic_list2: "Clinics",
@@ -773,7 +773,7 @@ const translation = {
         index_textt1: "رعاية صحية متقدمة لعائلتك، اليوم والمستقبل. ",
         /* footer */
         footer_title: "نحن هنا لتقديم رعاية صحية عالية الجودة بكل احترام ولطف، ونأمل أن نكون الخيار الأول والأمثل في تلبية احتياجاتكم الصحية وصحة عائلتكم.",
-        footer_department_item1:" طب الأسرة",
+        title_family_medicine:" طب الأسرة",
         footer_department_item2:" العظام",
         footer_department_item3:" التجميل",
         footer_department_item4:" جراحة اليد",
@@ -782,8 +782,8 @@ const translation = {
         footer_department_item7: "النساء والتوليد",
         footer_department_item8: "المختبر",
         footer_department_item9: "الأنف والأذن والحنجرة ",
-        footer_department_item10: " التغذية",
-        footer_department_item1_1: "العلاج الطبيعي",
+        title_family_medicine0: " التغذية",
+        title_family_medicine_1: "العلاج الطبيعي",
         footer_Electronic: "روابط إلكترونية ",
         footer_Electronic_list1: "من نحن",
         footer_Electronic_list2: "العيادات",
@@ -1472,13 +1472,7 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(function() {
     initLanguage();
 });
-
-// const play = document.getElementById("play");
-// play.addEventListener("click" , (event)=>{
-//     setLanguage(event.target.value);
-//     localStorage.setItem("langg" , event.target.value);
-// });
-
+ 
 
 function initLanguage() {
     let currentLang = getCurrentLang();
