@@ -7511,3 +7511,12 @@ textarea.form-control {
   margin-right: 10%;
 }
 .direction_{direction: ltr!important;}
+
+
+
+@media (max-width: 460px) {
+  #main-banner .slide-item{
+    height: 600px !important;
+  }
+
+}

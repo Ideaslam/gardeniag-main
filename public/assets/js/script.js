@@ -1454,51 +1454,113 @@ const translation = {
 
     },
 };
-const changeButton = document.getElementById("language");
-console.log(changeButton);
+ 
 
-const play = document.getElementById("play");
-play.addEventListener("click" , (event)=>{
-    setLanguage(event.target.value);
-    localStorage.setItem("langg" , event.target.value);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("language") == 'en') {
+        setLanguage('en');
+    } else {
+        setLanguage('ar' || localStorage.getItem("language"));
+    }
 });
-/*changeButton.addEventListener("change", function(event){
-    console.log("play")
-    setLanguage(event.target.value);
-    console.log("play");
-    console.log(event.target.value);
-    localStorage.setItem("langg" , event.target.value);
-});*/
+ 
 
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    if(localStorage.getItem("langg")=='ar'){
-        setLanguage('ar');
-    }
-    else{
-        setLanguage('en' || localStorage.getItem("langg"));
-    }
-    /*const storedLanguage = localStorage.getItem("langg") || ("ar") ;  
-    setLanguage(storedLanguage);*/
+// Language switching functionality
+$(document).ready(function() {
+    initLanguage();
 });
 
-function setLanguage(language){
+// const play = document.getElementById("play");
+// play.addEventListener("click" , (event)=>{
+//     setLanguage(event.target.value);
+//     localStorage.setItem("langg" , event.target.value);
+// });
+
+
+function initLanguage() {
+    let currentLang = getCurrentLang();
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    updateLanguageDisplay();
+    translatePage();
+    ChangeDirection();
+}
+
+function getCurrentLang() {
+    return localStorage.getItem('language') || 'en';
+}
+
+function setCurrentLang(lang) {
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+}
+
+function toggleLanguage() {
+    let currentLang = getCurrentLang();
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+    // Toggle language
+    currentLang = currentLang == 'ar' ? 'en' : 'ar';
+    setCurrentLang(currentLang); 
+    updateLanguageDisplay();
+    translatePage();
+    ChangeDirection();
+
+    // Dispatch the languageChanged event
+    window.dispatchEvent(new Event('languageChanged'));
+
+}
+
+function setLanguage(language) {
     const elements = document.querySelectorAll('[data-lang]');
-    elements.forEach((element)=>{
+    elements.forEach((element) => {
         const translationId = element.getAttribute("data-lang");
-        if(translation[language] && translation[language][translationId]) {
-            element.textContent = translation[language][translationId];
-        } else {
-            console.error(`Translation not found for ${translationId} in language ${language}`);
-        }
-        if(language === "en"){
-            document.dir = "ltr";
-        } else {
-            document.dir = "rtl";
-        }
+        element.textContent = translation[language][translationId];
     });
 };
 
+function updateLanguageDisplay() {
+    const langText = document.querySelector('.lang-text');
+    console.log(langText);
+    if (langText) { 
+        const l= getCurrentLang() == 'ar' ? 'AR' : 'EN'; 
+        $(".lang-text").text(l);
+    }
+}
+
+function translatePage() {
+    const currentLang = getCurrentLang();
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (translation[currentLang] && translation[currentLang][key]) {
+            element.textContent = translation[currentLang][key];
+        }
+    });
+}
+
+// Initial translation
+document.addEventListener('DOMContentLoaded', () => {
+    translatePage();
+});
+
+function ChangeDirection(){
+    const currentLang = getCurrentLang();
+    $('[dir-content]').each(function() {
+        if (currentLang === 'ar') {
+            $(this).addClass('rtl').removeClass('ltr');
+        } else {
+            $(this).addClass('ltr').removeClass('rtl');
+        }
+        
+    });
+
+}
 
 
 function working(){
