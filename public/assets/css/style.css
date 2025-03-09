@@ -3767,6 +3767,31 @@ input[type=radio] {
   opacity: 1;
 }
 
+
+/* Scroll Top Button */
+#whatsAppButton {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  z-index: 1000;
+  font-size: 18px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #21cdc0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#whatsAppButton:hover {
+  background-color: #222222;
+}
+#whatsAppButton.actived {
+  right: 30px;
+  opacity: 1;
+}
+
 @media (min-width: 1200px) {
   .footer .footer-widget-nav,
   .footer .footer-widget-about {
@@ -3819,6 +3844,16 @@ input[type=radio] {
     font-size: 14px;
   }
   #scrollTopBtn.actived {
+    right: 20px;
+  }
+
+  #whatsAppButton {
+    bottom: 55px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  #whatsAppButton.actived {
     right: 20px;
   }
 }
@@ -7519,5 +7554,13 @@ textarea.form-control {
   #main-banner .slide-item{
     height: 600px !important;
   }
+
+}
+
+
+@media (max-width: 460px) {
+   .language-switcher{
+    margin: 0px 50px;
+   }
 
 }

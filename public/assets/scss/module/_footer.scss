@@ -149,6 +149,31 @@
     }
 }
 
+#whatsAppButton {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    z-index: 1000;
+    font-size: 18px;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-primary;
+    overflow: hidden;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+
+    &:hover {
+        background-color: $color-dark;
+    }
+
+    &.actived {
+        right: 30px;
+        opacity: 1;
+    }
+}
+
 @media (min-width: 1200px) {
     .footer {
 
@@ -213,6 +238,18 @@
 
     #scrollTopBtn {
         bottom: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+
+        &.actived {
+            right: 20px;
+        }
+    }
+
+
+    #whatsAppButton {
+        bottom: 80px;
         width: 30px;
         height: 30px;
         font-size: 14px;

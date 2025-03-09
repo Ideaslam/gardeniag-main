@@ -100,6 +100,17 @@ $(function () {
         }, 500);
     });
 
+    /*==========   WhatsApp Button   ==========*/
+    var $whatsAppButton = $('#whatsAppButton');
+    // Show WhatsApp Button
+    $win.on('scroll', function () {
+        if ($(this).scrollTop() > 700) {
+            $whatsAppButton.addClass('actived');
+        } else {
+            $whatsAppButton.removeClass('actived');
+        }
+    });
+
     /*==========   Close Topbar   ==========*/
     $('.topbar__close').on("click", function (e) {
         e.preventDefault();
