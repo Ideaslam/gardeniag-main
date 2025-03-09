@@ -4294,7 +4294,7 @@ input[type=radio] {
 .features-layout2 .heading__icon {
   font-size: 60px;
   line-height: 1;
-  color: #35fff0;
+  color: white;
 }
 .features-layout2 .feature-item .icon-outlined:hover {
   background-color: #222222;
@@ -5571,7 +5571,7 @@ textarea.form-control {
 @media (min-width: 1200px) {
   .contact-layout1 .contact-panel__form,
   .contact-layout2 .contact-panel__form {
-    padding-right: 70px;
+    padding: 20px;
   }
   .contact-layout3 .contact-panel {
     margin-right: 30px;
@@ -6485,8 +6485,9 @@ textarea.form-control {
     padding: 0 0 90px 90px;
   }
   .about-layout2 .video-banner-layout2 {
+    margin: 10px;
     position: absolute;
-    z-index: 3;
+    z-index: 10;
     width: 135%;
     border-radius: 20px;
   }

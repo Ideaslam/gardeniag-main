@@ -240,6 +240,26 @@ $(function () {
     /*==========   Slick Carousel ==========*/
     $('.slick-carousel').slick();
 
+    $('.slick-carousel-banner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: false,
+        speed: 700
+    });
+
+    $('.slick-carousel-gallery').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        fade: false,
+        dots: false,
+        speed: 700
+    });
+
     $('.slider-with-navs').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
